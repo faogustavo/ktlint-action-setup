@@ -1,0 +1,18 @@
+name: 'Setup ktlint'
+description: 'This action installs ktlint'
+inputs:
+  ktlint_version:
+    description: 'KTLint version. X.Y.Z'
+    default: '0.42.1'
+runs:
+  using: 'composite'
+  steps:
+    - run: $GITHUB_ACTION_PATH/install.sh
+      shell: bash
+      env:
+        KTLINT_VERSION: ${{ inputs.ktlint_version }}
+    - run: |
+        echo "::group::📖 ktlint --version"
+        ktlint --version 2>&1 || true
+        echo "::endgroup::"
+      shell: bash
