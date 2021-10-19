@@ -13,6 +13,12 @@ inputs:
 
 ## Usage
 
+To run the KTLint action, you need to use a linux machine.
+
+```yml
+runs-on: ubuntu-latest
+```
+
 #### Default
 
 ```yml
