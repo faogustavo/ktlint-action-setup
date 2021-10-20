@@ -1,4 +1,4 @@
-# faogustavo/ktlint-action-setup
+# touchlab-lab/ktlint-action-setup
 
 This action installs ktlint.
 
@@ -23,7 +23,7 @@ runs-on: ubuntu-latest
 
 ```yml
 steps:
-  - uses: faogustavo/ktlint-action-setup@v1
+  - uses: touchlab-lab/ktlint-action-setup@1.0.0
   - run: ktlint --version
 ```
 
@@ -32,7 +32,7 @@ steps:
 
 ```yml
 steps:
-  - uses: faogustavo/ktlint-action-setup@v1
+  - uses: touchlab-lab/ktlint-action-setup@1.0.0
     with:
         ktlint_version: 0.40.0
   - run: ktlint --version
