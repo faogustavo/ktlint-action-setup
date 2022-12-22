@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="${KTLINT_VERSION:-0.42.1}"
+VERSION="${KTLINT_VERSION:-0.47.1}"
 curl -sSL "https://api.github.com/repos/pinterest/ktlint/releases" \
     | grep "browser_download_url.*ktlint\"" \
     | cut -d : -f 2,3 \
